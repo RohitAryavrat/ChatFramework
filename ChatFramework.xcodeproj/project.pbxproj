@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		254A18F220EB69C400159239 /* ChatFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 254A18F020EB69C400159239 /* ChatFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		254A18F920EB6D7100159239 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254A18F820EB6D7100159239 /* Chat.storyboard */; };
+		254A18FB20EB727500159239 /* RecentChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254A18FA20EB727500159239 /* RecentChatViewController.swift */; };
+		254A191B20EB767A00159239 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 254A191A20EB767A00159239 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		254A18ED20EB69C400159239 /* ChatFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChatFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		254A18F020EB69C400159239 /* ChatFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatFramework.h; sourceTree = "<group>"; };
 		254A18F120EB69C400159239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		254A18F820EB6D7100159239 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		254A18FA20EB727500159239 /* RecentChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentChatViewController.swift; sourceTree = "<group>"; };
+		254A191A20EB767A00159239 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +50,10 @@
 		254A18EF20EB69C400159239 /* ChatFramework */ = {
 			isa = PBXGroup;
 			children = (
-				254A18F020EB69C400159239 /* ChatFramework.h */,
 				254A18F120EB69C400159239 /* Info.plist */,
+				254A191A20EB767A00159239 /* Media.xcassets */,
+				254A18F820EB6D7100159239 /* Chat.storyboard */,
+				254A18FA20EB727500159239 /* RecentChatViewController.swift */,
 			);
 			path = ChatFramework;
 			sourceTree = "<group>";
@@ -59,7 +65,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				254A18F220EB69C400159239 /* ChatFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +100,7 @@
 				TargetAttributes = {
 					254A18EC20EB69C400159239 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +127,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254A191B20EB767A00159239 /* Media.xcassets in Resources */,
+				254A18F920EB6D7100159239 /* Chat.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254A18FB20EB727500159239 /* RecentChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 		254A18F620EB69C400159239 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +276,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aryavrat.ChatFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +285,7 @@
 		254A18F720EB69C400159239 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
